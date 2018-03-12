@@ -1,0 +1,444 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body, html { height:100%; width:100%;}
+form { height:100%; }
+body{ background:#ffffff; font-family:'ralewayregular', Arial; font-size:14px; color:#666666; overflow-x:hidden; line-height: normal;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+img { max-width: 100%; height: auto; border:0; width: auto\9; /* ie8 */}
+a{ text-decoration:none; outline:0; border:0;}
+/*a:hover, a:focus{ text-decoration: none; border:0; outline: 0;}*/
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.clr{ clear:both;}
+.push { height:115px;}
+ul, li{ list-style-type:none; margin: 0;}
+h1, h2, h3, h4, h5, h6{ font-weight:normal; margin: 0; padding: 0;}
+table{ border-collapse:collapse;}
+.fLeft{ float:left;}
+.fRight{ float:right;}
+.alignRight{ text-align:right;}
+.alignLeft{ text-align:left;}
+.alignCenter{ text-align:center;}
+.positionRelative{ position:relative;}
+*{ box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -ms-box-sizing:border-box;}
+
+::-webkit-input-placeholder {color: #a8aaa7;}
+:-moz-placeholder { color: #a8aaa7; opacity: 1;}
+::-moz-placeholder { color: #a8aaa7; opacity:  1;}
+:-ms-input-placeholder { color: #a8aaa7;}
+:placeholder-shown { color: #a8aaa7;}
+
+
+
+
+/********* Font Face ****************/
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.eot');
+    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway-extrabold-webfont.eot');
+    src: url('../fonts/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-extrabold-webfont.woff') format('woff'),
+         url('../fonts/raleway-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('../fonts/raleway-black-webfont.eot');
+    src: url('../fonts/raleway-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-black-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-black-webfont.woff') format('woff'),
+         url('../fonts/raleway-black-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-black-webfont.svg#ralewayblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.eot');
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff'),
+         url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.eot');
+    src: url('../fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff'),
+         url('../fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'source_sans_prolight';
+    src: url('../fonts/sourcesanspro-light-webfont.eot');
+    src: url('../fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-light-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway-semibold-webfont.eot');
+    src: url('../fonts/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-semibold-webfont.woff') format('woff'),
+         url('../fonts/raleway-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/***
+Global Margin
+***/
+.mTop20{ margin: 20px 0 0 0;}
+
+/***
+Main CSS Rules
+***********/
+p{ font-size: 16px; line-height: 24px; color:#7a7a7a; padding: 0 0 30px 0; margin:0;}
+p a{ color: #8f423a;}
+.wrapper{ max-width: 1200px; margin: 0 auto;}
+.header{ padding: 18px 24px 0 24px; background: #8f423a; }
+.logo{ display: inline-block; float: left; }
+.logo a{ display: block;}
+.logo a img{ vertical-align: top;}
+.headerRight{ width: auto; float: right; }
+.loginWrap{ text-align: right; }
+.loginWrap a{ display: inline-block; color: #ffffff; opacity: 0.5; font-size: 14px; padding: 6px 20px; border: 1px #c7a19d solid; margin:0 0 0 6px; transition:all 0.3s linear; -moz-transition:all 0.3s linear; -webkit-transition:all 0.3s linear;}
+.loginWrap a:hover{ background: #c7a19d; opacity: 1;}
+.topNav{ padding: 40px 0 0 0;}
+.topNav ul li{ display: inline-block; font-size: 16px; margin:0 0 0 18px; position: relative; padding: 0 0 4px 0;}
+.topNav ul li a{ display: block; color:#fff; opacity: 0.5; padding: 0 0 5px 0;}
+.topNav ul li a.navArrow{ background:url(../images/navArrow.png) 95% center no-repeat;}
+.topNav ul li a.navArrow:hover{ background:#651e16 url(../images/navArrow.png) 95% center no-repeat;}
+.topNav ul li a:hover, .topNav ul li a.activeNav{ opacity: 1; border-bottom: 2px #fff solid;  text-decoration: none; outline: 0;}
+.topNav ul li ul{ width: 200px; position: absolute; top: 27px; left: 0; background: #77241b; z-index: 99; display: none;}
+.topNav ul li ul li{ display: block; margin:0; position: relative; padding: 0;}
+.topNav ul li ul li a{ display: block; padding: 7px 10px; border: 0; transition:background 0.3s linear; -moz-transition:background 0.3s linear; -webkit-transition:background 0.3s linear;}
+.topNav ul li ul li a:hover, .topNav ul li ul li a.activePage{ border: 0; background: #651e16; opacity: 1; text-decoration: none; outline: 0;}
+.topNav ul li ul li a.navArrow.activePage{ border: 0; background: #651e16 url(../images/navArrow.png) 95% center no-repeat; opacity: 1;}
+.topNav ul li:hover ul{ display: block; }
+.topNav ul li ul li ul{ width: 200px; position: absolute; top: 0; left:200px; z-index: 99; display: none; visibility: hidden;}
+.topNav ul li ul li:hover ul{ display: block; visibility: visible;}
+
+.btnMobileNav{ width: 35px; height: 23px; position: fixed; top: 20px; right: 10px; display: none;}
+.mobileLogin{ background: #86ab37; padding: 10px; text-align: right; color: #fff; display: none;}
+.mobileLogin a{ color: #fff; display: inline-block; margin:0 0 0 10px; padding: 5px 10px; border: 1px #fff solid;}
+
+
+.topBannerBg{ width: 100%; position: absolute; left: 0; top: 0;}
+.topBannerBg img{ width: 100%; vertical-align: top;}
+.topbanner{ position: relative; }
+.topbanner img{ width: 100%; vertical-align: top;}
+.dvBookNow{ width: 100%; padding: 15px 0; background: #86ab37; opacity: 0.9; position: absolute; bottom: 0; left: 0; text-align: center;}
+.dvBookNow h2{ font-size: 24px; color:#fff; display: inline-block;}
+.btnBooknow{ display: inline-block; border: 2px #fff solid; font-size: 22px; color: #fff; border-radius: 8px; padding: 8px 45px; margin:0 0 0 20px;}
+
+.mob_dvBookNow{ padding: 15px 0; background: #86ab37; text-align: center; display: none;}
+.mob_dvBookNow h2{ font-size: 16px; color:#fff; display: inline-block;}
+.m_btnBooknow{ display: inline-block; border: 2px #fff solid; font-size: 16px; color: #fff; border-radius: 8px; padding: 8px 15px; margin:10px 0 0 0;}
+
+.international{ background: url(../images/punchlineBg.jpg) top center no-repeat; background-size: cover; padding: 30px 0;}
+.internationalInner{ max-width: 722px; margin:0 auto; text-align: center;}
+.imgCentury{ display: inline-block; padding: 0 28px 0 0;}
+.internationalInner h3{ padding: 0 0 45px 0;}
+.internationalInner h4{ font-family: 'ralewaysemibold', Arial; font-size: 28px; color: #fff; text-transform: uppercase; display: inline-block; text-align: left;}
+.internationalInner h5{ font-family: 'ralewaylight', Arial; font-size: 28px; color: #fff; padding: 50px 0 10px 0;}
+.internationalInner h5 span{ font-family: 'ralewaysemibold', Arial;}
+.internationalInner p{ font-family: 'ralewaylight', Arial; font-size: 16px; line-height: 24px; color: #fff; padding: 0;}
+
+.dvAboutOuter{ padding: 1px 0 0 0; }
+.aboutLeft{ width: 50%; float: left; }
+.aboutLeft img{ vertical-align: top; width: 100%;}
+.aboutRight{ width: 50%; float: right; text-align: center; padding:50px 50px 0 50px;}
+.aboutRight h3{ font-family: 'ralewaylight', Arial; font-size: 38px; color: #000000; margin:0 0 40px 0;}
+.aboutRight h3 span{ border-bottom: 2px #c6cacb solid; padding: 0 0 5px 0;}
+.aboutRight p{ font-size: 18px; color: #7a7a7a; line-height: 32px;}
+.aboutRight a{ color: #8f423a; font-size: 16px; text-decoration: underline; display: inline-block; margin:50px 0 0 0;}
+
+
+.membershipRow{ display: flex; display: -ms-flex; display: -webkit-flex; }
+.dvFlex{ display: flex; display: -ms-flex; display: -webkit-flex; width: 100%;}
+
+.membershipRow h3{ font-family: 'ralewaylight', Arial; font-size: 38px; color: #fff; margin:0 0 40px 0;}
+.membershipRow h3 span{ border-bottom: 2px rgba(255,255,255,0.2) solid; padding: 0 0 5px 0;}
+.dvMembership{ padding:20px 35px 0 35px; text-align: center; background: #d19630; height: 100%;}
+.dvMiddle{ width: 100%; }
+.dvMiddle img{ vertical-align: top; width: 100%; }
+.dvHotels{ padding:20px 35px 0 35px; text-align: center; background: #2d94cf;}
+.membershipRow p{ font-size: 18px; line-height: 24px; color: #fff; padding: 0;}
+.membershipRow a{ font-size: 18px; color: #fff; text-decoration: underline; display: inline-block; margin:30px 0 0 0;}
+
+.sponsorOuter{ padding: 35px 0; text-align: center; border-top: 1px #ccc solid;}
+.sponsorOuter.index{ border:0;}
+.sponsorOuter h3{ font-family: 'ralewaylight', Arial; font-size: 38px; color: #000000; margin:0 0 40px 0;}
+.sponsorOuter h3 span{ border-bottom: 2px #c6cacb solid; padding: 0 0 5px 0;}
+.sponsorList li{ font-size: 0;}
+.sponsorList li img{ vertical-align: top;}
+.sponsorList li{ display: inline-block; vertical-align: top; margin:0 15px 20px 15px;}
+
+.innerBanner{ height: 170px; background: url(../images/topBannerBg.jpg) top center no-repeat; background-size: cover; position: relative; text-align: center; }
+.innerBanner.hospitalityBanner{ height: 250px; }
+.bannerContent{ position: relative; top: 50%; transform: translateY(-50%); -moz-transform: translateY(-50%); -webkit-transform: translateY(-50%); max-width: 970px; margin:0 auto;}
+.innerBanner h2{ font-family: 'ralewaymedium', Arial; font-size: 60px; color: #fff;}
+.innerBanner h3{ font-size: 20px; color: #fff;}
+
+.mainContent{ padding: 40px 0; }
+.mainContentInner{ max-width: 970px; margin:0 auto; }
+.mainContentInner p{ font-size: 16px; line-height: 24px; color:#7a7a7a;}
+.mainContentInner p a{ color: #8f423a;}
+.mainContentInner h2{ font-family: 'ralewaymedium', Arial; font-size: 32px; color: #5b5b5b; padding:0 0 10px 0; text-align: center;}
+.mainContentInner h5{ font-size: 14px; color: #7a7a7a; text-align: center; padding: 0 0 40px 0;}
+.mainContentInner h4{ font-size: 20px; color: #7a7a7a; padding:0 0 15px 0;}
+.mainContentInner h3{ font-size: 20px; color: #7a7a7a; padding:0 0 15px 0;}
+.mainContentInner h3 a{ color: #8f423a;}
+.listing{ padding: 0 0 20px 0;}
+.listing li{ font-size: 16px; line-height: 24px; color:#7a7a7a; margin:0 0 10px 0; padding: 0 0 0 20px; background: url(../images/bullet.png) 0 8px no-repeat;}
+
+.dvPresidentLeft{ width: 140px; float: left; margin:0 30px 0 0;}
+.dvPresidentLeft h4{ font-size: 18px; padding: 10px 0 0 0; color: #000;}
+.dvPresidentLeft h5{ font-size: 16px; padding: 10px 0 0 0;}
+.dvPresidentRight{ display: block; overflow: hidden; }
+
+/***
+Board of Directors
+***/
+.dvBoardDirectors{ max-width: 1100px; margin: 0 auto; }
+.directorRow{ text-align: center; margin:0 0 30px 0;}
+.dvDirectorCol{ display: inline-block; width: 48.5%; min-height: 224px; background: #eee; border:1px #ddd solid; padding: 10px; text-align: left; vertical-align: top;}
+.thumb{ width: 125px; float: left; margin:0 15px 0 0;}
+.DirectorDetails{ display: block; overflow: hidden; }
+.DirectorDetails h4{ font-size: 16px; color: #000; padding: 0 0 10px 0;}
+.DirectorDetails p{ font-size: 14px; color: #666; line-height: 22px; padding: 0 0 10px 0;}
+.DirectorDetails p a{ color: #8f423a;}
+
+/***
+Legal Advice
+***/
+.dvLegalAdvice{ max-width: 1100px; margin:0 auto; }
+.dvLegalAdvice p a{ color: #8f423a;}
+.legalRow{ text-align: center; margin:0 0 30px 0;}
+.legalCol{ min-height: 420px; vertical-align: top; margin:0 0 30px 0; padding: 15px; border:1px #ddd solid; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; text-align: center;}
+.legalThumb{ width: 150px; height: 150px; background: #ccc; border-radius: 100%; overflow: hidden; margin: 0 auto;}
+.legalThumb img{ width: 100%; vertical-align: top;}
+.legalCol h4{ font-family: 'ralewaymedium', Arial; font-size: 16px !important; color: #000; padding:15px 0 10px 0 !important; }
+.legalCol p{ padding: 0;}
+
+/***
+Reffered Partners
+***/
+
+.preferedPartners{ max-width: 1000px; margin:0 auto; }
+.partnerRow{ text-align: center; margin:0 0 30px 0;}
+.partnerCol{ display: inline-block; width: 48%; background: #eee; padding: 15px; text-align: left; vertical-align: top; min-height: 200px;}
+.partnerCol h3{ font-size: 22px; color: #8f423a; padding: 0 0 5px 0;}
+.partnerCol h4{ font-size: 18px; color: #000; padding: 0 0 10px 0;}
+.partnerCol p{ font-size: 16px; line-height: 24px; color:#7a7a7a; padding: 0;}
+.partnerCol p a{ color: #8f423a;}
+
+/***
+Login
+***/
+.modal{ z-index: 999999; }
+.modal-header h4{ font-family: 'ralewaymedium', Arial; font-size: 22px; color: #000; }
+.loginRow{ margin:0 0 15px 0; }
+.lblBlock{ font-family: 'ralewaymedium', Arial; font-size: 14px; display: block; margin:0 0 5px 0; color: #7a7a7a;}
+.txtInput{ font-family: 'ralewaymedium', Arial; width: 100%; padding: 7px; font-size: 14px; color: #7a7a7a; outline: 0; border:1px #ddd solid;}
+.btnClose{ float: right; margin:7px 0 0 0; }
+.btnSubmit{ display: block; font-family: 'ralewaymedium', Arial; color: #fff; font-size: 16px; padding: 10px; background: #2e94cf; text-align: center; }
+.forgotPassword{ font-family: 'ralewaymedium', Arial; color: #8f423a; font-size: 14px; display: inline-block; padding: 0 10px;}
+.registerBtn{ display: inline-block; font-family: 'ralewaymedium', Arial; color: #fff; font-size: 16px; padding: 8px 20px; background: #2e94cf; text-align: center; }
+.cancelBtn{ display: inline-block; font-family: 'ralewaymedium', Arial; color: #fff; font-size: 16px; padding: 8px 20px; background: #8f423a; text-align: center; }
+
+
+/***
+News
+***/
+.newsOuter{ max-width: 1000px; margin:0 auto; }
+.newsRow{ border-bottom: 1px #ddd solid; padding: 0 0 20px 0; margin:0 0 20px 0;}
+.newsRow:last-child{ border:0;}
+.newsThumb{ width: 120px; height: 120px; float: left; background: #eee; margin:0 20px 0 0; overflow: hidden;}
+.newsThumb img{ width: 100%; height: 100%; overflow: hidden;}
+.newsRight{ display: block; overflow: hidden; }
+.newsRight h4{ font-size: 18px; color: #2d2b2d; padding: 0 0 10px 0; }
+.newsRight p{ padding: 0 0 10px 0;}
+.newsRight h5{ font-size: 22px; color: #2d2b2d; padding: 0 0 10px 0; }
+.newsRight h5 a{ color: #2d2b2d; text-decoration: none;}
+.newsRight a{ color: #8f423a; text-decoration: underline;}
+
+/***
+News Details
+***/
+.newsDetailsOuter{ max-width: 1000px; margin:0 auto; }
+.newsDetailsOuter h4{ font-size: 18px; padding: 20px 0 10px 0; color: #8f423a; }
+.newsDetailsOuter h5{ font-size: 22px; padding: 0 0 20px 0;}
+.newsDetailsOuter p{ font-size: 16px; line-height: 24px; padding: 0 0 20px 0;}
+
+/***
+Jobs
+***/
+.jobsLeft{ width: 300px; margin: 0 30px 0 0; float: left;}
+.filterBox{ border:1px #ebebeb solid; padding: 10px; box-shadow: 2px 2px 5px #ececec; -moz-box-shadow: 2px 2px 5px #ececec; -webkit-box-shadow: 2px 2px 5px #ececec;}
+.filterBox h3{ font-family: 'ralewaysemibold', Arial; font-size: 20px; line-height: 24px; color: #333333; padding: 0 0 15px 0;}
+.filterList li{ display: block; font-size: 14px; margin: 0 0 1px 0;}
+.filterList li a{ display: block; color: #929495; background: #f2f5f8; padding: 10px; transition:background-color 0.2s linear; -moz-transition:background-color 0.2s linear; -webkit-transition:background-color 0.2s linear;}
+.filterList li a:hover, .filterList li a.activeFilter{ color: #fff; background: #44c067 url(../images/tikmark.png) 95% center no-repeat;}
+.inputRow{ margin: 0 0 5px 0;}
+/*.inputRow input[type="text"]{ width: 100%; background: #f7f9fb; border:1px #ededed solid; font-family:'ralewayregular', Arial; font-size: 12px; color: #b3b5b6; padding: 10px; outline: 0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.inputRow input[type="text"]:focus{ box-shadow: 2px 2px 5px #ececec; -moz-box-shadow: 2px 2px 5px #ececec; -webkit-box-shadow: 2px 2px 5px #ececec;}*/
+.findBtn{ margin: 20px 0 0 0;}
+.btnFind{ display: block; width: 100%; background: #376699; border:0; outline: 0; cursor: pointer; font-family: 'ralewaysemibold', Arial; font-size: 14px; text-transform: uppercase; color: #fff; padding: 10px 0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; transition:background 0.2s linear; -moz-transition:background 0.2s linear; -webkit-transition:background 0.2s linear;}
+.btnFind span{ display: inline-block; background: url(../images/search-icon.png) left center no-repeat; padding: 0 0 0 25px;}
+.btnFind:hover{ background: #3a73b1;}
+
+
+.jobsRight{ display: block; overflow: hidden;}
+.jobsRow{ margin: 0 0 10px 0; padding:15px 20px 20px 20px;}
+.jobsRow.color1{ background: #f2f5f8;}
+.jobsRow.color2{ background: #f8fafb;}
+.jobsRow h3{ font-family: 'ralewayregular', Arial; font-size: 25px; line-height: 28px; color: #3c3c3c;}
+.jobsRow h3 a{ color: #3c3c3c;}
+.jobsRow p{ font-size: 13px; line-height: 16px; color: #7f868b; padding: 0;}
+.postedBy{ padding: 10px 0 18px 0;}
+.postedLeft{ width: auto; float: left; font-family: 'ralewaysemibold', Arial; font-size: 18px; line-height: 22px; color: #4e575d;}
+.postedRight{ float: right;}
+.postedRight ul li{ display: inline-block; margin: 0 0 0 20px; font-size: 15px; color: #8d9499;}
+.postedRight ul li span{ font-family: 'ralewayregular', Arial; color: #4e575d;}
+div.jfilestyle.jfilestyle-corner input:first-child{ padding: 7px 0; }
+
+/***
+Job Details
+***/
+.jobDetails{ max-width: 1000px; margin:0 auto; }
+.jobTitle h3{ width: 70%; font-size: 25px; font-family: 'ralewayregular', Arial; color: #3c3c3c; padding: 0 0 15px 0; float: left;}
+.jobDetails h4{ font-size: 18px; font-family: 'ralewayregular', Arial; color: #3c3c3c; padding: 0 0 15px 0;}
+.btnApply{ display: inline-block; float: right; padding: 8px 10px; font-size: 14px; color: #fff; background: #09c; }
+
+
+/***
+Events
+***/
+.eventsOuter{ max-width: 1100px; margin:0 auto; }
+.eventRow{ margin:0 0 30px 0; }
+.eventRow:last-child{ margin:0;}
+.eventBox{ display: inline-block; width: 48.5%; min-height: 310px; background: #fff; border:1px #f4f4f4 solid; vertical-align: top; padding: 15px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; border-radius: 6px; text-align: left; position: relative;}
+.eventImgThumb{ display: block; position: relative; text-align: center;}
+.btnRegister{ display: inline-block; border:2px #fff solid; font-size: 22px; padding: 6px 25px; color: #f00; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); background: #fff; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;}
+.eventImgThumb img{ vertical-align: top;}
+.eventBox h3{ font-size: 22px; line-height: 28px; color: #2e2e2e; padding: 10px 0 0 0;}
+.eventBox p{ font-size: 14px; line-height: 16px; color: #6e8391; padding: 5px 0 0 0;}
+.eventDetail{ padding: 20px 0 0 0;}
+.eventDetail li{ display: inline-block; font-size: 18px; line-height: 18px; color: #6e8391;}
+.eventDetail li.eventDate{ background: url(../images/calender.png) left center no-repeat; padding: 0 0 0 25px; margin: 0 20px 0 0;}
+.eventDetail li.eventVenue{ background: url(../images/location.png) left center no-repeat; padding: 0 0 0 20px;}
+
+/***
+Event Photos
+***/
+.eventGallery{ max-width: 1100px; margin:0 auto;}
+.popup-gallery{ display: flex; flex-wrap: wrap; }
+.popup-gallery a{ display: inline-block; width: 25%; padding:10px; }
+.popup-gallery a img{ vertical-align: top;}
+
+
+/***
+Hospitality Industry
+***/
+.dvHospitalityIndustry{ max-width: 970px; margin:0 auto; }
+.memberRow{ border-bottom: 1px #ddd solid; margin:0 0 30px 0; }
+.memberRow:last-child{ border:0;}
+.memberRow p span{ font-family: 'ralewaymedium', Arial; font-size: 22px; color: #e4a64a; }
+
+.dvHistoryBlack{ max-width: 970px; margin:0 auto; }
+.dvHistoryBlack h4{ font-size: 18px; padding: 0 0 10px 0;}
+.dvHistoryBlack h4 a{ color: #e1a951;}
+.dvHistoryBlack h3{ font-size: 22px; padding: 0 0 10px 0;}
+.dvHistoryBlack h3 a{ color: #e1a951;}
+
+
+/***
+Hotels
+***/
+.hotelsOuter{ max-width: 1120px; margin:0 auto; }
+.mapContainer{ text-align: center; }
+.map{ margin:0 auto; }
+.txtPath{ fill: transparent; cursor: pointer;}
+.txtPath:hover, .txtPath.activeLocation{ fill: #f00; opacity: 0.5; }
+
+.hotelListingCont{ padding: 50px 0 0 0; }
+.hotelRow{ border:1px #cdcdcd solid; padding: 20px; margin:0 0 20px 0;}
+.hotelImg{ width: 290px; float: left; margin:0 35px 0 0; }
+.hotelImg img{ vertical-align: top;}
+.hotelDesc{ display: block; overflow: hidden; }
+.hotelName{ padding: 0 0 30px 0; }
+.hotelName h2{ font-size: 26px; color: #4A4A4A; float: left; }
+.hotelName h3{ font-size: 16px; color: #4A4A4A; float: right; }
+.col50{ width: 50%; float: left; padding: 0 20px 0 0; }
+.col33{ width: 33%; float: left; padding: 0 20px 0 0; }
+.hotelDetailsRow{ padding:0 0 35px 0; }
+.hotelDetailsRow:last-child{ padding:0; }
+.hotelDetailsRow h4{ font-family: 'ralewaymedium', Arial; font-size: 12px; color: #909090; padding: 0 0 6px 0;}
+.hotelDetailsRow h5{ font-family: 'ralewaymedium', Arial; font-size: 13px; color: #4A4A4A;}
+.hotelDetailsRow h5 a{ color: #AF0004;}
+.hotelDetailsRow h6{ font-family: 'ralewaymedium', Arial; font-size: 12px; color: #909090;}
+
+.LocationName{ text-align: center; padding: 50px 0 0 0; }
+.LocationName h3{ font-family: 'ralewaymedium', Arial; font-size: 36px; color: #4A4A4A;}
+.border{ height: 5px; width: 124px; background: #ebebeb; margin: 0 0 20px 0; display: inline-block; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.LocationName h3 span{ color: #909090;}
+
+/***
+Footer
+***/
+.footer{ background: #f7f7f7; padding: 45px 0; text-align: center; }
+.footNav{ padding: 0 0 70px 0;}
+.footNav li{ display: inline-block; font-size:14px; font-family: 'ralewaymedium', Arial;  margin:0 15px;}
+.footNav li a{ display: block; color: #717171; opacity: 0.5;}
+.footNav li a:hover, .footNav li a.active{ opacity: 1; }
+.footer h5{ font-size:14px; font-family: 'ralewaymedium', Arial; color: #717171; opacity: 0.8; padding: 0 0 7px 0;}
+.footer p{ font-size:14px; font-family: 'ralewaymedium', Arial; color: #717171; opacity: 0.5; padding: 0;}
+.footer p a{ color: #717171;}
+
+
+
+

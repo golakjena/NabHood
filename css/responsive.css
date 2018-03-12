@@ -1,0 +1,181 @@
+@media (min-width:320px) and (max-width:767px){
+	.header{ width: 100%; padding: 10px; position: fixed; top: 0; left: 0; z-index: 999999;}	
+	.logo{ width: 110px; }
+	.headerRight{ width: 100%;}
+	.btnMobileNav{ display: block; }
+	.dvBookNow{ padding: 10px 0; display: none;}
+	.mob_dvBookNow{ display: block; }
+	.topNav{ width: 100%; position: fixed; height: calc(100% - 63px); top: 63px; right: 0; background: #8f423a; z-index: 999; padding: 0; overflow-y: auto; display: none;}
+	.topNav ul li{ display: block; margin:0; padding: 0; }
+	.topNav ul li a{ padding:10px; }
+	.topNav ul li a:hover,.topNav ul li a.activeNav{ border: 0; background: #651e16; }
+	.topNav ul li ul li a:hover, .topNav ul li ul li a.activePage{ border: 0; background: #651e16; opacity: 1;}
+	.topNav ul li ul{ position: relative; display: block; background: none; width: 100%; top: auto; }
+	.topNav ul li ul li ul{ position: relative; display: block; background: none; width: 100%; top: auto; left: auto; visibility: visible; }
+	.topNav ul li ul li a{ padding: 7px 10px 7px 30px; }
+	.topNav ul li ul li ul li a{ padding: 7px 10px 7px 60px; }
+	
+
+	.loginWrap{ display: none;}
+	.forgotPassword{ display: block; padding: 10px 0 0 0; }
+	.mobileLogin{ display: block; }
+	
+	.topbanner{ margin:63px 0 0 0; }
+	.topBannerBg{ position: fixed; top: 63px; z-index: 999; display: none;}
+	.internationalInner{ padding: 0 10px; }
+	.imgCentury{ padding: 0 0 10px 0; }
+	.internationalInner h4{ font-size: 16px; text-align: center; line-height: 24px; }
+	.internationalInner h5{ padding: 30px 0 10px 0; }
+	
+	.aboutLeft{ width: 100%; }
+	.aboutRight{ width: 100%; padding:30px 10px; }
+	.aboutRight h3{ margin:0 0 20px 0; font-size: 32px;}
+	.aboutRight p{ font-size: 16px; line-height: 24px; padding: 0; }
+	.aboutRight a{ margin: 20px 0 0 0; }
+	.membershipRow h3{ font-size: 32px; margin:0 0 20px 0; }
+	.membershipRow p{ font-size: 16px; }
+	.membershipRow{ background: none; }
+	.dvMembership{ padding: 30px 10px; background: #d19630;}
+	.dvHotels{ padding: 30px 10px; background: #2d94cf; }
+	.sponsorOuter{ padding: 30px 10px; }
+	.sponsorOuter h3{ font-size: 32px; }
+	.sponsorList li{ width: 50%; height: 70px; padding: 0 5px; float: left; margin:0; text-align: center; border: 1px #ddd solid;}
+	
+	.mainContent{ padding: 20px 0; }
+	.mainContentInner h2{ font-size: 24px; }
+	.mainContentInner h5{ padding: 0 0 25px 0; }
+	.mainContentInner h3{ font-size: 18px; }
+	p{ padding:0 0 20px 0; font-size: 14px;}
+	.mainContentInner{ padding: 0 15px;}
+	.dvBoardDirectors{ padding: 0 15px;}
+	.dvPresidentLeft{ width: 100%; margin:0; text-align: center; }
+	.thumb{ width: 70px; }
+	.dvPresidentRight{ width: 100%; overflow:visible; float: left; }
+	.directorRow{ margin:0; }
+	.dvDirectorCol{ width: 100%; margin:0 0 15px 0; min-height: auto;}
+	.dvDirectorCol.fRight{ float: left;}
+	.dvHospitalityIndustry{ padding: 0 15px; }
+	.dvHistoryBlack{ padding: 0 15px; }
+	.innerBanner{ height: auto; padding: 30px 15px; margin:63px 0 0 0; }
+	.memberRow p span{ font-size: 18px; }
+	.dvHistoryBlack h3{ font-size: 18px; }
+	.listing li{ font-size: 14px; }
+	.eventBox h3{ font-size: 18px; line-height: 24px; }
+	.eventDetail li{ font-size: 14px; }
+	.innerBanner h2{ font-size: 28px; }
+	.bannerContent{ top: auto; transform: none; -moz-transform: none; -webkit-transform: none; }
+	.innerBanner.hospitalityBanner{ height: auto; }
+	.eventRow{ margin:0; }
+	.eventBox{ width: 100%; padding: 10px; margin:0 0 15px 0; min-height: auto; }
+	.eventsOuter{ padding: 0 15px; }
+	.btnRegister{ padding: 6px 15px; font-size: 16px;}
+	.hotelListingCont{ padding: 30px 0 0 0; }
+	.hotelsOuter{ padding: 0 15px; }
+	.hotelRow{ padding: 10px; }
+	.hotelImg{ width: 100%; margin:0 0 15px 0; float: left;}
+	.hotelDesc{ width: 100%; float: left; overflow:visible; }
+	.hotelName{ padding: 0 0 15px 0; }
+	.hotelName h2{ font-size: 18px; float: none; display: block; padding: 0 0 5px 0;}
+	.hotelDetailsRow{ padding: 0; }
+	.col50{ width: 100%; padding: 0 0 20px 0; }
+	.col33{ width: 100%; padding: 0 0 20px 0; }
+	.LocationName h3{ font-size: 26px; }
+	.newsOuter{ padding: 0 15px; }
+	.newsThumb{ width: 64px; height: 64px; }
+	.newsRight h5{ font-size: 18px; }
+	.hotelName h3{ float: none; display: block; }
+	.dvLegalAdvice{ padding: 0 15px; }
+	.legalRow{ margin:0; }
+	.legalCol{ min-height: auto; max-width: 300px; margin:0 auto; margin-bottom: 15px;}
+	.preferedPartners{ padding: 0 15px; }
+	.partnerRow{ margin:0; }
+	.partnerCol{ width: 100%; float: left; min-height: auto; margin:0 0 20px 0; }
+	.careersOuter{ padding: 0 15px; }
+	.jobsLeft{ width: 100%; margin:0 0 15px 0; }
+	.jobsRight{ display: block; overflow:visible; width: 100%; float: left; }
+	.jfilestyle.jfilestyle-corner input[type="text"]{ width: 155px !important;}
+	.jobsRow{ padding: 10px; }
+	.jobsRow h3{ font-size: 18px; line-height: 22px; }
+	.postedBy{ padding: 10px 0 18px; }
+	.postedLeft{ width: 100%; padding: 0 0 10px 0; font-size: 16px; line-height: 20px;}
+	.postedRight{ width: 100%; float: left; }
+	.postedRight ul li{ margin:0 15px 0 0; }
+	
+	.partnerCol p{ font-size: 14px; line-height: 22px; }
+	.footer{ padding: 20px 10px; }
+	.footNav{ display: none; }
+	.footer h5{ font-size: 13px; }
+	.footer p{ font-size: 13px; line-height: 18px;}
+	
+	.membershipRow, .dvFlex{ flex-wrap: wrap; -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; }
+
+	.mainContentInner p{ font-size: 14px; }
+
+	.eventGallery{ padding: 0 15px; }
+	.newsDetailsOuter{ padding: 0 15px; }
+	.jobDetails{ padding: 0 15px; }
+	.popup-gallery a{ width: 50%; padding: 5px; }
+	.newsDetailsOuter h5{ font-size: 18px; }
+	.newsDetailsOuter p{ font-size: 14px; }
+	.jobTitle h3{ font-size: 20px; }
+	.btnApply{ font-size: 12px; }
+	.jobDetails h4{ font-size: 16px; }
+
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+	.header{ padding: 15px 15px 0 15px;}	
+	.headerRight{ width: 100%;}
+	.topNav{ padding: 20px 0 0 0; text-align: right;}
+	.topNav ul li ul{ text-align: left;}
+	.loginWrap{ width: auto; position: absolute; right:15px; top: 20px;}
+	.aboutRight{ padding: 20px 20px 30px 20px; }
+	.aboutRight h3{ margin:0 0 20px 0; }
+	.aboutRight p{ font-size: 16px; line-height: 24px; padding: 0; }
+	.aboutRight a{ margin: 20px 0 0 0; }
+	.membershipRow{ background: none; }
+	.dvMembership{ padding: 35px 20px; background: #d19630;}
+	.dvHotels{ padding: 35px 20px; background: #2d94cf; }
+	.mainContentInner{ padding: 0 15px;}
+	.dvBoardDirectors{ padding: 0 15px;}
+	.directorRow{ margin:0; }
+	.dvDirectorCol{ width: 100%; margin:0 0 20px 0; min-height: auto;}
+	.dvDirectorCol.fRight{ float: left;}
+	.dvHospitalityIndustry{ padding: 0 15px; }
+	.dvHistoryBlack{ padding: 0 15px; }
+	.innerBanner{ height: auto; padding: 60px 0 30px 0; }
+	.bannerContent{ top: auto; transform: none; -moz-transform: none; -webkit-transform: none; }
+	.innerBanner.hospitalityBanner{ height: auto; }
+	.eventsOuter{ padding: 0 15px; }
+	.btnRegister{ padding: 6px 18px; }
+	.hotelsOuter{ padding: 0 15px; }
+	.hotelRow{ padding: 10px; }
+	.hotelImg{ width: 130px; margin:0 15px 0 0; }
+	.hotelName{ padding: 0 0 15px 0; }
+	.hotelName h2{ font-size: 22px; }
+	.newsOuter{ padding: 0 15px; }
+	.dvLegalAdvice{ padding: 0 15px; }
+	.preferedPartners{ padding: 0 15px; }
+	.partnerRow{ margin:0; }
+	.partnerCol{ width: 100%; float: left; min-height: auto; margin:0 0 20px 0; }
+	.careersOuter{ padding: 0 15px; }
+	.jobsLeft{ width: 250px; }
+	.jfilestyle.jfilestyle-corner input[type="text"]{ width: 155px !important;}
+	.postedBy{ padding: 10px 0 18px; }
+	.postedLeft{ width: 100%; padding: 0 0 10px 0;}
+	.postedRight{ width: 100%; float: left; }
+	.postedRight ul li{ margin:0 15px 0 0; }
+
+	.membershipRow, .dvFlex{ flex-wrap: wrap; -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; }
+
+	.eventGallery{ padding: 0 15px; }
+	.newsDetailsOuter{ padding: 0 15px; }
+	.jobDetails{ padding: 0 15px; }
+
+}
+	
+
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape){
+	
+}

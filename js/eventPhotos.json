@@ -1,0 +1,24 @@
+
+var eventPhotos = [
+  {
+    "picture": "eventPhotos/photo1.jpg"
+  },
+  {
+    "picture": "eventPhotos/photo2.jpg"
+  },
+  {
+    "picture": "eventPhotos/photo3.jpg"
+  },
+  {
+    "picture": "eventPhotos/photo4.jpg"
+  },
+  {
+    "picture": "eventPhotos/photo5.jpg"
+  },
+  {
+    "picture": "eventPhotos/photo6.jpg"
+  },
+  {
+    "picture": "eventPhotos/photo7.jpg"
+  }
+]
